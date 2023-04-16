@@ -3,7 +3,7 @@ import tensorflow_hub as hub		#모델이 모여있는 hub
 
 from tensorflow import keras					#keras API 
 from tensorflow.keras import layers				#predefined layers 
-from tensorflow.keras.models import Sequential	#Class. allow you to add layers and blocks. 
+from tensorflow.keras.models import Sequential	  #Class. allow you to add layers and blocks. 
 
 import pathlib 				#Path Object로 만들어줌 
 import PIL.Image as image 		#jpg를 screen에서 보여준다. 
