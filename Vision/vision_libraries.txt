@@ -1,3 +1,4 @@
+'''
 import tensorflow as tf			# tf
 import tensorflow_hub as hub		#모델이 모여있는 hub
 
@@ -12,3 +13,4 @@ import cv2			          		#path로 찾은후 numpy array 형식으로 바꿔줌
 1. jpg folder path 만들기
 2. cv2로 path에 있는 image를 numpy array화  
 3. resize 하거나 하고싶은 작업 하기
+'''
