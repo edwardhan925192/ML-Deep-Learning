@@ -5,8 +5,8 @@ from tensorflow import keras			#keras API
 from tensorflow.keras import layers		#predefined layers 
 from tensorflow.keras.models import Sequential	  #Class. allow you to add layers and blocks. 
 
-import pathlib 				#Path Object로 만들어줌 
-import PIL.Image as image 		#jpg를 screen에서 보여준다. 
+import pathlib 			 	#Path Object로 만들어줌 
+import PIL.Image as image 	 	#jpg를 screen에서 보여준다. 
 import cv2				#path로 찾은후 numpy array 형식으로 바꿔줌
 
 1. jpg folder의 path 지정
