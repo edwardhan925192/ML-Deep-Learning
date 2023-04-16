@@ -1,14 +1,14 @@
-| Code | Comment |
-| ---- | ------- ----------------------------------------|
-| `import tensorflow as tf` | tf |
-| `import tensorflow_hub as hub` | 모델이 모여있는 hub |
-| `from tensorflow import keras` | keras API |
-| `from tensorflow.keras import layers` | predefined layers |
-| `from tensorflow.keras.models import Sequential` | Class. allow you to add layers and blocks. |
-| `import pathlib` | Path Object로 만들어줌 (glob 사용가능) |
-| `import PIL.Image as image` | jpg를 screen에서 보여준다. |
-| `import cv2` | path로 찾은후 numpy array 형식으로 바꿔줌 |
-| | |
-| 1. jpg folder path 만들기 | |
-| 2. cv2로 path에 있는 image를 numpy array화 | |
-| 3. resize 하거나 하고싶은 작업 하기 | |
+import tensorflow as tf			# tf
+import tensorflow_hub as hub		#모델이 모여있는 hub
+
+from tensorflow import keras					#keras API 
+from tensorflow.keras import layers				#predefined layers 
+from tensorflow.keras.models import Sequential		#Class. allow you to add layers and blocks. 
+
+import pathlib 				#Path Object로 만들어줌 
+import PIL.Image as image 		#jpg를 screen에서 보여준다. 
+import cv2					#path로 찾은후 numpy array 형식으로 바꿔줌
+
+1. jpg folder의 path 
+2. cv2로 path에 있는 image 3D matrix 
+3. resize 하거나 하고싶은 작업 하기. 
