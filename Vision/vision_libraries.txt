@@ -9,6 +9,6 @@ import pathlib 				#Path Object로 만들어줌
 import PIL.Image as image 		#jpg를 screen에서 보여준다. 
 import cv2				#path로 찾은후 numpy array 형식으로 바꿔줌
 
-1. jpg folder의 path 
-2. cv2로 path에 있는 image 3D matrix 
-3. resize 하거나 하고싶은 작업 하기. 
+1. jpg folder의 path 지정
+2. cv2로 path에 있는 image numpy array화 
+3. resize 하거나 하고싶은 작업 하기
