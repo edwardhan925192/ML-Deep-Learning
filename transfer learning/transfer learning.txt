@@ -1,8 +1,8 @@
 ********** layers **********
-feature_extractor_model = "https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4"
+feature_extractor_model = "https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4" #가져오기 feature_vector
 
 pretrained_model_without_top_layer = hub.KerasLayer(
-    feature_extractor_model, input_shape=(224, 224, 3), trainable=False)
+    feature_extractor_model, input_shape=(224, 224, 3), trainable=False) #trainiable = False, layers 안바꿈
 
 model = tf.keras.Sequential([
   pretrained_model_without_top_layer, #pretrained_model 
@@ -14,9 +14,9 @@ model.summary()
 
 ********** compile **********
 model.compile(
-  optimizer="adam",
-  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-  metrics=['acc'])
+optimizer="adam",
+loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+metrics=['acc'])
 
 ********** backpropagation **********
 model.fit(X_train_scaled, y_train, epochs=5) 
