@@ -1,0 +1,24 @@
+********** layers **********
+feature_extractor_model = "https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4"
+
+pretrained_model_without_top_layer = hub.KerasLayer(
+    feature_extractor_model, input_shape=(224, 224, 3), trainable=False)
+
+model = tf.keras.Sequential([
+  pretrained_model_without_top_layer, #pretrained_model 
+  tf.keras.layers.Dense(num_of_flowers)
+])
+
+model.summary()
+
+
+********** compile **********
+model.compile(
+  optimizer="adam",
+  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+  metrics=['acc'])
+
+********** backpropagation **********
+model.fit(X_train_scaled, y_train, epochs=5) 
+num_of_flowers = 5
+
