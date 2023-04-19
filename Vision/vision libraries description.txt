@@ -1,0 +1,13 @@
+import path 
+import cv2 
+
+********** pathlib **********
+Path function returns Path
+
+Path.iterdir() --> going over subdir
+Path.glob(*.type) type = jpg, py, txt, and etc. 
+
+********** cv2 **********
+cv2.imread('path') --> numpy.arr
+cv2.resize --> resizing numpy.arr
+
